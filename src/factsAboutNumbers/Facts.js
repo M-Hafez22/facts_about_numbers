@@ -23,11 +23,14 @@ export default function Facts() {
 
 
     return (
-        <div>
-            <h1>{fact}</h1>
+        <div className="fact" id="fact" >
+
+            <p className="fact__text " id="factText">{fact}</p>
+
             <div className="loaders">
                 <div style={isLoading ? {display: "block"}:{display: 'none'}} className="loader"></div>
             </div>
+            
         </div>
     )
 }

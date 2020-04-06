@@ -20,10 +20,12 @@ export default function Type() {
             name:'math'
         }];
 
+
     const changeType = (event) => {
         console.log(event.currentTarget.textContent);
         setType(event.currentTarget.textContent);
     }
+
 
     const buttons = types.map(item => (
         <Button 
@@ -35,7 +37,7 @@ export default function Type() {
 
 
     return (
-        <div>
+        <div className="type__buttons">
             {buttons}
         </div>
     )

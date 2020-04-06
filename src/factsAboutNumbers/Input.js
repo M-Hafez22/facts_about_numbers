@@ -13,7 +13,7 @@ export default function Input() {
 
 
     return (
-        <div>
+        <div  className="input">
             <input 
                 type="number"
                 value={number}
