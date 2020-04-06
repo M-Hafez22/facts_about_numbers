@@ -10,12 +10,13 @@ export default function Facts() {
     const [number] = useContext(NumberContext);
 
     useEffect(() => {
+        let url = "http://numbersapi.com";
         setLoading(true)
         console.log(isLoading)
-        fetch(`http://numbersapi.com/${number}${type === "number" ? "" : "/"+type}`)
+        fetch(`${url}${number === "" ? "" : '/'+number}${type === "number" ? "" : "/"+type}`)
             .then((resp) => resp.text())
             .then((data) => {
-                console.log(data);
+                console.log("data");
                 number !== "" && setFact(data);
                 setLoading(false);
             })
