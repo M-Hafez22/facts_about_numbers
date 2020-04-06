@@ -1,9 +1,14 @@
 import React from 'react'
+import Type from './Type'
+import Input from './Input'
+import Facts from './Facts'
 
 export default function Main() {
     return (
-        <div>
-            <h1>Main Component</h1>
-        </div>
+        <main>
+            <Type />
+            <Input />
+            <Facts />
+        </main>
     )
 }
