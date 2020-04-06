@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function App() {
+export default function Main() {
     return (
         <div>
-            <Header /> 
-            <Main />
+            <h1>Main Component</h1>
         </div>
     )
 }
