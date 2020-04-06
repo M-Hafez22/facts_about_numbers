@@ -23,14 +23,15 @@ export default function Facts() {
 
 
     return (
-        <div className="fact" id="fact" >
+        <div className="fact" id="fact" 
+        style={number === ""  || fact === "" ? {display:"none"} : {display:"block"}}>
 
             <p className="fact__text " id="factText">{fact}</p>
 
             <div className="loaders">
                 <div style={isLoading ? {display: "block"}:{display: 'none'}} className="loader"></div>
             </div>
-            
+
         </div>
     )
 }
