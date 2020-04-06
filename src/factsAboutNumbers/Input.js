@@ -1,9 +1,28 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import {NumberContext} from "./NumberContext";
+
 
 export default function Input() {
+
+    const [number, setNumber] = useContext(NumberContext);
+
+    const changeNumber = (event) => {
+        setNumber(event.target.value);
+        console.log(event.target.value)
+    }
+
+
     return (
         <div>
-            <h1>Input</h1>
+            <input 
+                type="number"
+                value={number}
+                onChange={changeNumber}
+                autoComplete="off" required/>
+
+            <label  className="label-number">
+                <span className="content">Enter a Number</span>
+            </label>
         </div>
     )
 }
