@@ -24,7 +24,10 @@ export default function Facts() {
 
     return (
         <div>
-            <h1>Fact</h1>
+            <h1>{fact}</h1>
+            <div className="loaders">
+                <div style={isLoading ? {display: "block"}:{display: 'none'}} className="loader"></div>
+            </div>
         </div>
     )
 }
