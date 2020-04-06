@@ -37,8 +37,11 @@ export default function Type() {
 
 
     return (
-        <div className="type__buttons">
-            {buttons}
+        <div className="type">
+            <h2 className="type__header">Choose the type of input</h2>
+            <div className="type__buttons">
+                {buttons}
+            </div>
         </div>
     )
 }
