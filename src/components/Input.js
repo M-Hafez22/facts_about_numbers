@@ -22,9 +22,7 @@ export default function Input() {
                 required
               />
 
-            <label  className="label-number">
-                <span className="content">Enter a Number</span>
-            </label>
+            <label  className="label-number">Enter a Number</label>
         </div>
     )
 }
