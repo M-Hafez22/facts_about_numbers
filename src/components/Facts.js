@@ -10,7 +10,7 @@ export default function Facts() {
     const [number] = useContext(NumberContext);
 
     useEffect(() => {
-        let url = "http://numbersapi.com";
+        let url = "https://numbersapi.com";
         setLoading(true)
         console.log(isLoading)
         fetch(`${url}${number === "" ? "" : '/'+number}${type === "number" ? "" : "/"+type}`)
