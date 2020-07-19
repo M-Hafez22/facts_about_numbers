@@ -14,11 +14,13 @@ export default function Input() {
 
     return (
         <div  className="input">
-            <input 
+            <input
                 type="number"
                 value={number}
                 onChange={changeNumber}
-                autoComplete="off" required/>
+                autoComplete="off"
+                required
+              />
 
             <label  className="label-number">
                 <span className="content">Enter a Number</span>
