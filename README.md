@@ -4,10 +4,14 @@
 #### version 1.0.0
 ![App preview](./Readme_assets/preview.png)
 ## Table of Contents
+- [General info](#general-info)
 - [Manual](#manual)
 - [Technologies](#technologies)
 - [Inspiration](#inspiration)
 - [License](#license)
+
+## General info
+Based on [**numbersapi.com**](http://numbersapi.com/) API, this website Generates random facts about numbers and years.
 
 ## Manual
 This project generates three types of facts
