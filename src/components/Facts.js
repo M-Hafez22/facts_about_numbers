@@ -10,9 +10,8 @@ export default function Facts() {
     const [number] = useContext(NumberContext);
 
     useEffect(() => {
-        let url = "https://numbersapi.com";
+        let url = "http://numbersapi.com";
         setLoading(true)
-        console.log(isLoading)
         fetch(`${url}${number === "" ? "" : '/'+number}${type === "number" ? "" : "/"+type}`)
             .then((resp) => resp.text())
             .then((data) => {
@@ -24,7 +23,7 @@ export default function Facts() {
 
 
     return (
-        <div className="fact" id="fact" 
+        <div className="fact" id="fact"
         style={number === ""  || fact === "" ? {display:"none"} : {display:"block"}}>
 
             <p className="fact__text " id="factText">{fact}</p>
