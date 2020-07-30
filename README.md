@@ -29,6 +29,7 @@ This project generates three types of facts
 
 ## Inspiration
 This project inspired by [Vanilla JS Number Facts App - Ajax & Fetch](https://www.youtube.com/watch?v=tUE2Nic21BA&t=3s) video from [**Traversy Media**](https://www.youtube.com/c/TraversyMedia/featured)  Youtube channel.
+The original uses vanilla JavaScript. This has been convered into React.
 
 > This is a practice to what I learned about **React** & **React Hooks**.
 
