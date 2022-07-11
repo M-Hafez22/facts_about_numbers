@@ -7,3 +7,9 @@ test('renders random facts', () => {
   const linkElement = getByText(/random facts/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders Choose the type of input', () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Choose the type of input/i);
+  expect(linkElement).toBeInTheDocument();
+});
